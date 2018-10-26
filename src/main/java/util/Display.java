@@ -150,7 +150,7 @@ public class Display {
 		}
 		else {
 			this.w.w("");
-			this.w.w("La patient n'a encore effectué aucune consultation ");
+			this.w.w("La patient n'a encore effectué aucune consultation jusqu'a present");
 			this.w.w("");
 		}
 	}
@@ -162,7 +162,7 @@ public class Display {
 		if(iter.size()>0) {
 			while(iter.hasNext()) {
 				ComptesRendu r =(ComptesRendu) iter.next();		
-				this.w.w("Liste des comptes rendu pour : " + r.getNom().getSpec().getNom().toString());
+				this.w.w("Liste des comptes-rendu pour : " + r.getNom().getSpec().getNom().toString());
 				this.w.w("Compte rendu du : " + formatter.format(r.getDate()));
 				this.w.w("Rédigé par : "+ r.getNom().getNom().toString());
 				this.w.w(r.getDescriptif());
@@ -170,7 +170,7 @@ public class Display {
 		}
 		else {
 			this.w.w("");
-			this.w.w("La patient n'a encore effectué aucune consultation ");
+			this.w.w("La patient n'a encore effectué aucune consultation jusqu'a present ");
 			this.w.w("");
 
 		}
